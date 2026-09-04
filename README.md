@@ -165,3 +165,5 @@ npm run test:marketplace
    - Adds a complimentary **Braided Cable Clip Set** perk!
 6. Click **"Accept Deal & Proceed to Razorpay"** and test the checkout.
 7. Switch to the **Merchant Hub** and **Audit Trail** tabs to see the updated revenue, margin protection metrics, and mathematical explanation logs!
+#   D e a l P i l o t - A I  
+ 
