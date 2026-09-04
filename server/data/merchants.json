@@ -1,0 +1,70 @@
+[
+  {
+    "id": "merchant-apex",
+    "name": "ApexTech Official Store",
+    "slug": "apextech",
+    "rating": 4.9,
+    "verified": true,
+    "location": "Bengaluru, Karnataka",
+    "policy": {
+      "maxDiscountPercent": 12,
+      "maxDiscountAmount": 600,
+      "minProfitMarginPercent": 15,
+      "maxNegotiationRounds": 3,
+      "allowSubstitutions": true,
+      "allowBundlePerks": true,
+      "bundlePerksThreshold": 4000
+    }
+  },
+  {
+    "id": "merchant-omni",
+    "name": "OmniTech Solutions",
+    "slug": "omnitech",
+    "rating": 4.8,
+    "verified": true,
+    "location": "Mumbai, Maharashtra",
+    "policy": {
+      "maxDiscountPercent": 10,
+      "maxDiscountAmount": 500,
+      "minProfitMarginPercent": 18,
+      "maxNegotiationRounds": 3,
+      "allowSubstitutions": true,
+      "allowBundlePerks": true,
+      "bundlePerksThreshold": 3500
+    }
+  },
+  {
+    "id": "merchant-cyber",
+    "name": "CyberPeripherals India",
+    "slug": "cyberperipherals",
+    "rating": 4.6,
+    "verified": true,
+    "location": "Delhi NCR",
+    "policy": {
+      "maxDiscountPercent": 8,
+      "maxDiscountAmount": 400,
+      "minProfitMarginPercent": 12,
+      "maxNegotiationRounds": 2,
+      "allowSubstitutions": false,
+      "allowBundlePerks": false,
+      "bundlePerksThreshold": 3000
+    }
+  },
+  {
+    "id": "merchant-pro",
+    "name": "ProGear Direct",
+    "slug": "progear",
+    "rating": 4.7,
+    "verified": true,
+    "location": "Hyderabad, Telangana",
+    "policy": {
+      "maxDiscountPercent": 15,
+      "maxDiscountAmount": 750,
+      "minProfitMarginPercent": 20,
+      "maxNegotiationRounds": 4,
+      "allowSubstitutions": true,
+      "allowBundlePerks": true,
+      "bundlePerksThreshold": 4500
+    }
+  }
+]

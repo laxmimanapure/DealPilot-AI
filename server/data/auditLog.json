@@ -1,0 +1,1891 @@
+[
+  {
+    "id": "audit-payment-1788530761756",
+    "timestamp": "2026-09-04T14:06:01.756Z",
+    "customer": "Aarav Sharma",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 5499,
+    "customerOffer": 5348,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-761756 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹1389 (26% margin) while saving customer ₹151.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788530761750-256",
+    "timestamp": "2026-09-04T14:06:01.750Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5499,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 4100,
+    "finalMarginPercent": 23.3,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "23.3%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-payment-1788529875268",
+    "timestamp": "2026-09-04T13:51:15.268Z",
+    "customer": "Aarav Sharma",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 5499,
+    "customerOffer": 5348,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-875267 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹1389 (26% margin) while saving customer ₹151.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788529875260-194",
+    "timestamp": "2026-09-04T13:51:15.260Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5499,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 4100,
+    "finalMarginPercent": 23.3,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "23.3%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-payment-1788528363531",
+    "timestamp": "2026-09-04T13:26:03.531Z",
+    "customer": "Aarav Sharma",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 5499,
+    "customerBudget": 5224.05,
+    "customerOffer": 5224.05,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3761,
+    "finalMarginPercent": 28,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-363531 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹1463.0500000000002 (28% margin) while saving customer ₹274.95.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788528330909-285",
+    "timestamp": "2026-09-04T13:25:30.909Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 4799,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 24.2,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹274.95",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "24.2%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 2,
+        "passed": true
+      }
+    },
+    "verdict": "FINAL_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 2/2 offering ₹5224.05 (-₹274.95).",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788528310898-320",
+    "timestamp": "2026-09-04T13:25:10.898Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-payment-1788528220178",
+    "timestamp": "2026-09-04T13:23:40.178Z",
+    "customer": "Aarav Sharma",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 5499,
+    "customerOffer": 5348,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-220178 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹1389 (26% margin) while saving customer ₹151.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788528220173-953",
+    "timestamp": "2026-09-04T13:23:40.173Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5499,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 4100,
+    "finalMarginPercent": 23.3,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "23.3%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788527953606-262",
+    "timestamp": "2026-09-04T13:19:13.606Z",
+    "customer": "Customer",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "requestedItems": [
+      "Redragon K552"
+    ],
+    "planType": "Budget Saver",
+    "originalTotal": 3299,
+    "customerBudget": 3299,
+    "customerOffer": 2000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 145,
+    "aiProposedPrice": 3154,
+    "wholesaleCost": 2500,
+    "finalMarginPercent": 20.7,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "8%",
+        "value": "4.4%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹400",
+        "value": "₹145",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "12%",
+        "value": "20.7%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "CyberPeripherals India policy (max 8%, ₹400 cap, min 12% margin) applied. Round 1/2 offering ₹3154 (-₹145).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-payment-1788527946378",
+    "timestamp": "2026-09-04T13:19:06.378Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 5499,
+    "customerOffer": 5348,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-946378 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹1389 (26% margin) while saving customer ₹151.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788527946371-998",
+    "timestamp": "2026-09-04T13:19:06.371Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5499,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 4100,
+    "finalMarginPercent": 23.3,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "23.3%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788527830475-644",
+    "timestamp": "2026-09-04T13:17:10.475Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 4100,
+    "finalMarginPercent": 23.3,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "23.3%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788527803875-117",
+    "timestamp": "2026-09-04T13:16:43.875Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5499,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 4100,
+    "finalMarginPercent": 23.3,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "23.3%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-payment-1788525441924",
+    "timestamp": "2026-09-04T12:37:21.924Z",
+    "customer": "Aarav Sharma",
+    "requestedItems": [
+      "Sony WH-1000XM5 Wireless Noise Canceling Headphones"
+    ],
+    "planType": "Sony WH-1000XM5 Wireless Noise Canceling Headphones",
+    "originalTotal": 24999,
+    "customerBudget": 5000,
+    "customerOffer": 24499,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 24499,
+    "wholesaleCost": 17999,
+    "finalMarginPercent": 26.5,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-441924 successfully processed via Razorpay. DealPilot AI secured merchant profit of ₹6500 (26.5% margin) while saving customer ₹500.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788525432627-372",
+    "timestamp": "2026-09-04T12:37:12.627Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "audio"
+    ],
+    "planType": "Sony WH-1000XM5 Wireless Noise Canceling Headphones",
+    "originalTotal": 24999,
+    "customerBudget": 24999,
+    "customerOffer": 5000,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 24499,
+    "wholesaleCost": 17999,
+    "finalMarginPercent": 26.5,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹500",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26.5%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹19999 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹500 off to offer ₹24499.",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788525430321-651",
+    "timestamp": "2026-09-04T12:37:10.321Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "audio"
+    ],
+    "planType": "Sony WH-1000XM5 Wireless Noise Canceling Headphones",
+    "originalTotal": 24999,
+    "customerBudget": 24999,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 24499,
+    "wholesaleCost": 17999,
+    "finalMarginPercent": 26.5,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹500",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26.5%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹19999 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹500 off to offer ₹24499.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-payment-1788524308178",
+    "timestamp": "2026-09-04T12:18:28.178Z",
+    "customer": "Integration Tester",
+    "requestedItems": [
+      "Mechanical Keyboard",
+      "Precision Mouse",
+      "ANC Headphones"
+    ],
+    "planType": "Ergonomic Developer Workstation Bundle",
+    "originalTotal": 4900,
+    "customerBudget": 4600,
+    "customerOffer": 4655,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 245,
+    "aiProposedPrice": 4655,
+    "wholesaleCost": 3500,
+    "finalMarginPercent": 24.8,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-308178 successfully processed via Razorpay. DealPilot AI secured merchant profit of ₹1155 (24.8% margin) while saving customer ₹245.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": [
+      "Braided Cable Clips"
+    ]
+  },
+  {
+    "id": "audit-1788524301664-660",
+    "timestamp": "2026-09-04T12:18:21.664Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "Mechanical Keyboard",
+      "Precision Mouse",
+      "ANC Headphones"
+    ],
+    "planType": "Ergonomic Developer Workstation Bundle",
+    "originalTotal": 4900,
+    "customerBudget": 4900,
+    "customerOffer": 4600,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 245,
+    "aiProposedPrice": 4655,
+    "wholesaleCost": 3500,
+    "finalMarginPercent": 24.8,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹245",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "24.8%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹300 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹245 off to offer ₹4655.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788524195834-970",
+    "timestamp": "2026-09-04T12:16:35.834Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹700 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788524195832-346",
+    "timestamp": "2026-09-04T12:16:35.832Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 4800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹900 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788523341692-451",
+    "timestamp": "2026-09-04T12:02:21.692Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹700 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788523341688-116",
+    "timestamp": "2026-09-04T12:02:21.688Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 4800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹900 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788522902145-455",
+    "timestamp": "2026-09-04T11:55:02.145Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹700 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788522902140-168",
+    "timestamp": "2026-09-04T11:55:02.140Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 4800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹900 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788521842250-961",
+    "timestamp": "2026-09-04T11:37:22.250Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹700 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788521842246-224",
+    "timestamp": "2026-09-04T11:37:22.246Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 4800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹900 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-payment-1788520463525",
+    "timestamp": "2026-09-04T11:14:23.525Z",
+    "customer": "Aarav Sharma",
+    "requestedItems": [
+      "Zebronics 20\" LED Slim Desktop Monitor",
+      "Logitech C922 Pro Stream 1080p 60FPS Webcam",
+      "Ergotech Aluminum Foldable Ergonomic Laptop Stand",
+      "Razer Strider Hybrid Extra Large Gaming Desk Mat"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 11900,
+    "customerBudget": 12000,
+    "customerOffer": 11400,
+    "negotiationRound": 3,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 11400,
+    "wholesaleCost": 0,
+    "finalMarginPercent": 27.2,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-463525 successfully processed via Razorpay. DealPilot AI secured merchant profit of ₹11400 (27.2% margin) while saving customer ₹500.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788520453564-466",
+    "timestamp": "2026-09-04T11:14:13.564Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "monitor",
+      "webcam",
+      "stand",
+      "desk_mat"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 11900,
+    "customerBudget": 12000,
+    "customerOffer": 11400,
+    "negotiationRound": 3,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 11400,
+    "wholesaleCost": 8300,
+    "finalMarginPercent": 27.2,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": 5,
+        "value": 4.2,
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": 500,
+        "value": 500,
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": 8,
+        "value": 27.2,
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 3,
+        "passed": false
+      }
+    },
+    "verdict": "ROUNDS_EXHAUSTED",
+    "explanation": "Maximum 2 negotiation rounds reached. Locked in our final approved merchant price of ₹11400.",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788520447430-497",
+    "timestamp": "2026-09-04T11:14:07.430Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "monitor",
+      "webcam",
+      "stand",
+      "desk_mat"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 14300,
+    "customerBudget": 12000,
+    "customerOffer": 13800,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 13800,
+    "wholesaleCost": 10100,
+    "finalMarginPercent": 26.8,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "3.5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹500",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26.8%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "APPROVED",
+    "explanation": "Customer offer of ₹13800 grants ₹500 discount (3.5%), maintaining a strong 26.8% profit margin (policy minimum: 8%).",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788520408739-945",
+    "timestamp": "2026-09-04T11:13:28.739Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "monitor",
+      "webcam",
+      "stand",
+      "desk_mat"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 16600,
+    "customerBudget": 12000,
+    "customerOffer": 12000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 16100,
+    "wholesaleCost": 11900,
+    "finalMarginPercent": 26.1,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "3%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹500",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26.1%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹4600 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹500 off to offer ₹16100.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-payment-1788520185911",
+    "timestamp": "2026-09-04T11:09:45.911Z",
+    "customer": "Aarav Sharma",
+    "requestedItems": [
+      "Logitech K120 Ergonomic Silent Keyboard",
+      "Dell MS116 Optical Wired Business Mouse",
+      "Zebronics Zeb-Thunder Wireless BT Headphone"
+    ],
+    "planType": "Budget Saver",
+    "originalTotal": 3600,
+    "customerBudget": 5000,
+    "customerOffer": 3420,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 180,
+    "aiProposedPrice": 3420,
+    "wholesaleCost": 2400,
+    "finalMarginPercent": 29.8,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-185911 successfully processed via Razorpay. DealPilot AI secured merchant profit of ₹1020 (29.8% margin) while saving customer ₹180.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788520152565-314",
+    "timestamp": "2026-09-04T11:09:12.565Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Budget Saver",
+    "originalTotal": 3600,
+    "customerBudget": 3600,
+    "customerOffer": 3240,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 180,
+    "aiProposedPrice": 3420,
+    "wholesaleCost": 2400,
+    "finalMarginPercent": 29.8,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹180",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "29.8%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹360 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹180 off to offer ₹3420.",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788520101567-47",
+    "timestamp": "2026-09-04T11:08:21.567Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Budget Saver",
+    "originalTotal": 3600,
+    "customerBudget": 3600,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 0,
+    "aiProposedPrice": 3600,
+    "wholesaleCost": 2400,
+    "finalMarginPercent": 33.3,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "0%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹0",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "33.3%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "FULL_PRICE_APPROVED",
+    "explanation": "Customer offer of ₹3600 grants ₹0 discount (0%), maintaining a strong 33.3% profit margin (policy minimum: 8%).",
+    "outcome": "COUNTER_OFFER_ACCEPTED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788209383177-324",
+    "timestamp": "2026-08-31T20:49:43.177Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 4700,
+    "customerBudget": 5000,
+    "customerOffer": 5015,
+    "negotiationRound": 4,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 4200,
+    "wholesaleCost": 3150,
+    "finalMarginPercent": 25,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": 5,
+        "value": 10.6,
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": 500,
+        "value": 500,
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": 8,
+        "value": 25,
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 4,
+        "passed": false
+      }
+    },
+    "verdict": "ROUNDS_EXHAUSTED",
+    "explanation": "Maximum 2 negotiation rounds reached. Locked in our final approved merchant price of ₹4200.",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788209372575-289",
+    "timestamp": "2026-08-31T20:49:32.575Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 4700,
+    "customerBudget": 5000,
+    "customerOffer": 4435,
+    "negotiationRound": 3,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 4200,
+    "wholesaleCost": 3150,
+    "finalMarginPercent": 25,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": 5,
+        "value": 10.6,
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": 500,
+        "value": 500,
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": 8,
+        "value": 25,
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 3,
+        "passed": false
+      }
+    },
+    "verdict": "ROUNDS_EXHAUSTED",
+    "explanation": "Maximum 2 negotiation rounds reached. Locked in our final approved merchant price of ₹4200.",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788209352885-479",
+    "timestamp": "2026-08-31T20:49:12.885Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5300,
+    "customerBudget": 5000,
+    "customerOffer": 5015,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 265,
+    "aiProposedPrice": 5035,
+    "wholesaleCost": 3600,
+    "finalMarginPercent": 28.5,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹265",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28.5%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹285 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹265 off to offer ₹5035.",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788209346600-988",
+    "timestamp": "2026-08-31T20:49:06.600Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹700 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-payment-1788209319826",
+    "timestamp": "2026-08-31T20:48:39.826Z",
+    "customer": "Aarav Sharma",
+    "requestedItems": [
+      "Keychron K2 Mechanical Wireless Keyboard (RGB, Hot-Swap)",
+      "Razer DeathAdder Essential 6400 DPI Ergonomic Mouse",
+      "boAt Rockerz 550 Over-Ear Wireless Headphones (50mm Drivers)"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5300,
+    "customerBudget": 5000,
+    "customerOffer": 4800,
+    "negotiationRound": 3,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 4800,
+    "wholesaleCost": 0,
+    "finalMarginPercent": 25,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-319826 successfully processed via Razorpay. DealPilot AI secured merchant profit of ₹4800 (25% margin) while saving customer ₹500.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788209284196-995",
+    "timestamp": "2026-08-31T20:48:04.196Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5300,
+    "customerBudget": 5000,
+    "customerOffer": 5015,
+    "negotiationRound": 3,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 4800,
+    "wholesaleCost": 3600,
+    "finalMarginPercent": 25,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": 5,
+        "value": 9.4,
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": 500,
+        "value": 500,
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": 8,
+        "value": 25,
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 3,
+        "passed": false
+      }
+    },
+    "verdict": "ROUNDS_EXHAUSTED",
+    "explanation": "Maximum 2 negotiation rounds reached. Locked in our final approved merchant price of ₹4800.",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788209277328-249",
+    "timestamp": "2026-08-31T20:47:57.328Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 5130,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹570 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788209151860-355",
+    "timestamp": "2026-08-31T20:45:51.860Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 285,
+    "aiProposedPrice": 5415,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 28,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹285",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "28%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹700 discount, but store policy caps discounts at 5% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹285 off to offer ₹5415.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788208552991-427",
+    "timestamp": "2026-08-31T20:35:52.991Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 5200,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 25,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "10%",
+        "value": "8.8%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹500",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "25%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 2",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹700 discount, but store policy caps discounts at 10% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹500 off to offer ₹5200.",
+    "outcome": "FINAL_OFFER_MADE",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-1788208552987-701",
+    "timestamp": "2026-08-31T20:35:52.987Z",
+    "customer": "Customer",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 4800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 5200,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 25,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "10%",
+        "value": "8.8%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹500",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "25%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": "2 attempts",
+        "value": "Round 1",
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹900 discount, but store policy caps discounts at 10% (max ₹500) while safeguarding our 8% profit margin. DealPilot AI safely applied ₹500 off to offer ₹5200.",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set"
+    ]
+  },
+  {
+    "id": "audit-001",
+    "timestamp": "2026-08-31T20:15:30.000Z",
+    "customer": "Customer_7891",
+    "requestedItems": [
+      "keyboard",
+      "mouse",
+      "headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 5700,
+    "customerBudget": 5000,
+    "customerOffer": 4800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 5200,
+    "wholesaleCost": 3900,
+    "finalMarginPercent": 25,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": 10,
+        "value": 8.77,
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": 500,
+        "value": 500,
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": 8,
+        "value": 25,
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "APPROVED",
+    "explanation": "Calculated 8.77% discount (capped at ₹500) maintains profit margin at 25.0%, surpassing the 8% minimum requirement.",
+    "outcome": "COUNTER_OFFER_ACCEPTED",
+    "perksAdded": [
+      "Braided Cable Management Clip Set (Complimentary)"
+    ]
+  },
+  {
+    "id": "audit-002",
+    "timestamp": "2026-08-31T21:02:11.000Z",
+    "customer": "Customer_4123",
+    "requestedItems": [
+      "monitor",
+      "webcam"
+    ],
+    "planType": "Best Value",
+    "originalTotal": 9400,
+    "customerBudget": 8000,
+    "customerOffer": 7500,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 500,
+    "aiProposedPrice": 8900,
+    "wholesaleCost": 6850,
+    "finalMarginPercent": 23.03,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": 10,
+        "value": 5.32,
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": 500,
+        "value": 500,
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": 8,
+        "value": 23.03,
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 2,
+        "passed": true
+      }
+    },
+    "verdict": "CLAMPED_TO_POLICY",
+    "explanation": "Customer requested ₹1,900 discount which violates 10% & ₹500 rule. AI clamped counter-offer to ₹500 discount + suggested substitution.",
+    "outcome": "COMPLETED_WITH_SUBSTITUTION",
+    "perksAdded": []
+  }
+]

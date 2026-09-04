@@ -1,0 +1,20 @@
+{
+  "name": "dealpilot-ai",
+  "version": "1.0.0",
+  "description": "DealPilot AI - Smart Budget Planning & Safe AI Negotiation",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "client:dev": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "server:start": "npm start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "test:auth": "node scratch/test_auth_mongo.js",
+    "test:marketplace": "node scratch/test_marketplace_flow.js",
+    "dev": "node start-dev.js"
+  },
+  "keywords": ["ai-negotiation", "agentic-commerce", "ecommerce", "budget-planner", "razorpay"],
+  "author": "DealPilot AI Team",
+  "license": "ISC"
+}

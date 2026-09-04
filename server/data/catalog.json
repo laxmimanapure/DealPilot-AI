@@ -1,0 +1,1162 @@
+[
+  {
+    "id": "kb-apex-g413",
+    "productId": "kb-apex-g413",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "name": "Logitech G413 Carbon Mechanical Backlit Gaming Keyboard",
+    "category": "keyboard",
+    "tier": "mid",
+    "brand": "Logitech",
+    "sellingPrice": 4899,
+    "retailPrice": 4899,
+    "costPrice": 3900,
+    "rating": 4.7,
+    "reviewsCount": 1840,
+    "stock": 24,
+    "imageUrl": "https://images.unsplash.com/photo-1595044426077-d36d9236d54a?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Romer-G Tactile Mechanical Switches",
+      "Aircraft-Grade 5052 Aluminum Top Case",
+      "USB Passthrough Port",
+      "Precision Red Backlighting"
+    ],
+    "specs": {
+      "Switch Type": "Romer-G Tactile",
+      "Actuation Distance": "1.5 mm",
+      "Cable Length": "1.8 m Braided",
+      "Frame Material": "Brushed Aluminum Alloy"
+    },
+    "substituteIds": [
+      "kb-cyber-k552",
+      "kb-cyber-gk18"
+    ]
+  },
+  {
+    "id": "kb-omni-g413",
+    "productId": "kb-omni-g413",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "name": "Logitech G413 Carbon Mechanical Gaming Keyboard (Value Deal)",
+    "category": "keyboard",
+    "tier": "mid",
+    "brand": "Logitech",
+    "sellingPrice": 4799,
+    "retailPrice": 4799,
+    "costPrice": 3800,
+    "rating": 4.8,
+    "reviewsCount": 2210,
+    "stock": 18,
+    "imageUrl": "https://images.unsplash.com/photo-1595044426077-d36d9236d54a?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Romer-G Tactile Switches",
+      "Brushed Aluminum-Magnesium Alloy",
+      "Ultra-Fast 1ms Response Rate",
+      "Gaming Keycaps Included"
+    ],
+    "specs": {
+      "Switch Type": "Romer-G Tactile",
+      "Actuation Distance": "1.5 mm",
+      "Cable": "USB 2.0 Passthrough",
+      "Warranty": "2 Years Official"
+    },
+    "substituteIds": [
+      "kb-omni-k2",
+      "kb-cyber-k552"
+    ]
+  },
+  {
+    "id": "kb-omni-k2",
+    "productId": "kb-omni-k2",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "name": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "category": "keyboard",
+    "tier": "premium",
+    "brand": "Keychron",
+    "sellingPrice": 5499,
+    "retailPrice": 5499,
+    "costPrice": 4100,
+    "rating": 4.9,
+    "reviewsCount": 3420,
+    "stock": 12,
+    "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Hot-Swappable Gateron G-Pro Brown Switches",
+      "Wireless Bluetooth 5.1 & Wired Type-C",
+      "4000 mAh Massive Battery (up to 240 hours)",
+      "Mac & Windows Dedicated Layout Keys"
+    ],
+    "specs": {
+      "Switch Type": "Gateron G Pro Brown (Tactile)",
+      "Connectivity": "Bluetooth 5.1 & USB-C",
+      "Battery Capacity": "4000 mAh",
+      "Keycaps": "Double-shot ABS with OEM profile"
+    },
+    "substituteIds": [
+      "kb-omni-g413",
+      "kb-cyber-k552"
+    ]
+  },
+  {
+    "id": "kb-apex-k552",
+    "productId": "kb-apex-k552",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "name": "Redragon K552 Kumara Rainbow Mechanical Keyboard",
+    "category": "keyboard",
+    "tier": "mid",
+    "brand": "Redragon",
+    "sellingPrice": 3499,
+    "retailPrice": 3499,
+    "costPrice": 2600,
+    "rating": 4.5,
+    "reviewsCount": 1560,
+    "stock": 35,
+    "imageUrl": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Custom Mechanical Dustproof Blue Switches",
+      "Metal Alloy & ABS Construction",
+      "Compact 87-Key Tenkeyless Design",
+      "Gold Plated High-Speed USB Cable"
+    ],
+    "specs": {
+      "Switch Type": "Outemu Blue Clicky",
+      "Layout": "Tenkeyless 87 Keys",
+      "Backlighting": "Rainbow Multi-Zone",
+      "Connector": "Gold-Plated USB"
+    },
+    "substituteIds": [
+      "kb-cyber-gk18"
+    ]
+  },
+  {
+    "id": "kb-cyber-k552",
+    "productId": "kb-cyber-k552",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "name": "Redragon K552 Kumara Mechanical TKL Keyboard (Special Deal)",
+    "category": "keyboard",
+    "tier": "budget",
+    "brand": "Redragon",
+    "sellingPrice": 3299,
+    "retailPrice": 3299,
+    "costPrice": 2500,
+    "rating": 4.6,
+    "reviewsCount": 2980,
+    "stock": 40,
+    "imageUrl": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Tactile Clicky Outemu Blue Switches",
+      "Double-Shot Injection Molded Keycaps",
+      "Splash-Proof Sturdy Metal Body",
+      "N-Key Rollover Anti-Ghosting"
+    ],
+    "specs": {
+      "Switch Type": "Dustproof Blue Clicky",
+      "Form Factor": "TKL 87 Keys",
+      "Anti-Ghosting": "Full 87 Keys",
+      "Warranty": "1 Year Manufacturer"
+    },
+    "substituteIds": [
+      "kb-cyber-gk18",
+      "kb-omni-g413"
+    ]
+  },
+  {
+    "id": "kb-cyber-gk18",
+    "productId": "kb-cyber-gk18",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "name": "Cosmic Byte CB-GK-18 Firefly RGB Mechanical Keyboard",
+    "category": "keyboard",
+    "tier": "budget",
+    "brand": "Cosmic Byte",
+    "sellingPrice": 2999,
+    "retailPrice": 2999,
+    "costPrice": 2200,
+    "rating": 4.4,
+    "reviewsCount": 3100,
+    "stock": 50,
+    "imageUrl": "https://images.unsplash.com/photo-1595044426077-d36d9236d54a?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Outemu Red Linear Switches",
+      "Per-Key RGB Lighting with Software Support",
+      "Compact TKL Aluminum Frame",
+      "Foldable Ergonomic Kickstand"
+    ],
+    "specs": {
+      "Switch Type": "Outemu Red (Smooth Linear)",
+      "Lighting": "16.8M Color RGB",
+      "Key Rollover": "Full Anti-Ghosting",
+      "Weight": "780g"
+    },
+    "substituteIds": [
+      "kb-cyber-k552"
+    ]
+  },
+  {
+    "id": "kb-01",
+    "name": "Keychron K2 Mechanical Wireless Keyboard (RGB, Hot-Swap)",
+    "category": "keyboard",
+    "tier": "premium",
+    "brand": "Keychron",
+    "retailPrice": 2000,
+    "costPrice": 1400,
+    "rating": 4.9,
+    "reviewsCount": 1420,
+    "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Gateron G-Pro Switches",
+      "Wireless Bluetooth 5.1 & Type-C",
+      "Mac & Windows Layout",
+      "RGB Backlit"
+    ],
+    "specs": {
+      "Switch Type": "Brown Tactile",
+      "Connectivity": "Bluetooth + USB-C",
+      "Battery": "4000 mAh"
+    },
+    "substituteIds": [
+      "kb-02",
+      "kb-03"
+    ],
+    "productId": "kb-01",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "sellingPrice": 2000,
+    "stock": 15
+  },
+  {
+    "id": "kb-02",
+    "name": "Redragon K552 Kumara RGB Mechanical Keyboard",
+    "category": "keyboard",
+    "tier": "mid",
+    "brand": "Redragon",
+    "retailPrice": 1800,
+    "costPrice": 1250,
+    "rating": 4.6,
+    "reviewsCount": 3890,
+    "imageUrl": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Outemu Blue Switches",
+      "Custom RGB Lighting",
+      "Metal Alloy Construction",
+      "Tenkeyless (TKL)"
+    ],
+    "specs": {
+      "Switch Type": "Blue Clicky",
+      "Connectivity": "Wired USB",
+      "Layout": "87 Keys TKL"
+    },
+    "substituteIds": [
+      "kb-01",
+      "kb-03"
+    ],
+    "productId": "kb-02",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "sellingPrice": 1800,
+    "stock": 16
+  },
+  {
+    "id": "kb-03",
+    "name": "Logitech K120 Ergonomic Silent Keyboard",
+    "category": "keyboard",
+    "tier": "budget",
+    "brand": "Logitech",
+    "retailPrice": 1200,
+    "costPrice": 850,
+    "rating": 4.4,
+    "reviewsCount": 8540,
+    "imageUrl": "https://images.unsplash.com/photo-1595044426077-d36d9236d54a?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Spill-resistant Design",
+      "Whisper Quiet Keys",
+      "Durable Keys (10M clicks)",
+      "Plug and Play"
+    ],
+    "specs": {
+      "Switch Type": "Membrane",
+      "Connectivity": "Wired USB-A",
+      "Layout": "Full Size 104 Keys"
+    },
+    "substituteIds": [
+      "kb-02"
+    ],
+    "productId": "kb-03",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "sellingPrice": 1200,
+    "stock": 17
+  },
+  {
+    "id": "kb-04",
+    "name": "Portronics Bubble Wireless Keyboard with Trackball",
+    "category": "keyboard",
+    "tier": "budget",
+    "brand": "Portronics",
+    "retailPrice": 999,
+    "costPrice": 680,
+    "rating": 4.2,
+    "reviewsCount": 612,
+    "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Compact 75% Layout",
+      "Multi-Device Switching",
+      "Integrated Phone Cradle"
+    ],
+    "specs": {
+      "Switch Type": "Scissor",
+      "Connectivity": "2.4GHz + BT 5.0",
+      "Battery": "AAA Powered"
+    },
+    "substituteIds": [
+      "kb-03"
+    ],
+    "productId": "kb-04",
+    "merchantId": "merchant-pro",
+    "merchantName": "ProGear Direct",
+    "sellingPrice": 999,
+    "stock": 18
+  },
+  {
+    "id": "ms-01",
+    "name": "Razer DeathAdder Essential 6400 DPI Ergonomic Mouse",
+    "category": "mouse",
+    "tier": "premium",
+    "brand": "Razer",
+    "retailPrice": 900,
+    "costPrice": 600,
+    "rating": 4.8,
+    "reviewsCount": 5420,
+    "imageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "6400 True DPI Optical Sensor",
+      "5 Hyperesponse Buttons",
+      "10 Million Click Lifespan",
+      "Ergonomic Curve"
+    ],
+    "specs": {
+      "DPI": "6400 DPI",
+      "Sensor": "Optical",
+      "Weight": "96g"
+    },
+    "substituteIds": [
+      "ms-02",
+      "ms-03"
+    ],
+    "productId": "ms-01",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "sellingPrice": 900,
+    "stock": 19
+  },
+  {
+    "id": "ms-02",
+    "name": "Logitech G102 Lightsync RGB Optical Gaming Mouse",
+    "category": "mouse",
+    "tier": "mid",
+    "brand": "Logitech",
+    "retailPrice": 700,
+    "costPrice": 480,
+    "rating": 4.7,
+    "reviewsCount": 9210,
+    "imageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "8000 DPI Sensor",
+      "Color Wave RGB Lighting",
+      "6 Programmable Buttons",
+      "Mechanical Button Tensioning"
+    ],
+    "specs": {
+      "DPI": "8000 DPI",
+      "Sensor": "Mercury Optical",
+      "Weight": "85g"
+    },
+    "substituteIds": [
+      "ms-01",
+      "ms-03"
+    ],
+    "productId": "ms-02",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "sellingPrice": 700,
+    "stock": 20
+  },
+  {
+    "id": "ms-03",
+    "name": "Dell MS116 Optical Wired Business Mouse",
+    "category": "mouse",
+    "tier": "budget",
+    "brand": "Dell",
+    "retailPrice": 600,
+    "costPrice": 400,
+    "rating": 4.3,
+    "reviewsCount": 12500,
+    "imageUrl": "https://images.unsplash.com/photo-1605773527852-c546a8584ea3?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "1000 DPI Precision",
+      "Ambidextrous Design",
+      "Smooth Scrolling Wheel",
+      "High Reliability"
+    ],
+    "specs": {
+      "DPI": "1000 DPI",
+      "Sensor": "LED Optical",
+      "Weight": "72g"
+    },
+    "substituteIds": [
+      "ms-02"
+    ],
+    "productId": "ms-03",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "sellingPrice": 600,
+    "stock": 21
+  },
+  {
+    "id": "ms-04",
+    "name": "Portronics Toad 23 Wireless 2.4GHz Mouse",
+    "category": "mouse",
+    "tier": "budget",
+    "brand": "Portronics",
+    "retailPrice": 450,
+    "costPrice": 300,
+    "rating": 4.2,
+    "reviewsCount": 2400,
+    "imageUrl": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Silent Click Switches",
+      "2.4GHz Wireless USB Nano",
+      "Ergonomic Grip"
+    ],
+    "specs": {
+      "DPI": "1200 DPI",
+      "Battery": "1x AA",
+      "Range": "10m"
+    },
+    "substituteIds": [
+      "ms-03"
+    ],
+    "productId": "ms-04",
+    "merchantId": "merchant-pro",
+    "merchantName": "ProGear Direct",
+    "sellingPrice": 450,
+    "stock": 22
+  },
+  {
+    "id": "hp-01",
+    "name": "Audio-Technica ATH-M20x Studio Monitor Headphones",
+    "category": "headphones",
+    "tier": "premium",
+    "brand": "Audio-Technica",
+    "retailPrice": 2800,
+    "costPrice": 1900,
+    "rating": 4.9,
+    "reviewsCount": 3100,
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "40mm Drivers with Rare Earth Magnets",
+      "Tuned for Enhanced Low-Frequency Performance",
+      "Circumaural Contoured Earcups",
+      "Studio Grade Cable"
+    ],
+    "specs": {
+      "Driver": "40 mm",
+      "Frequency": "15 - 20,000 Hz",
+      "Impedance": "47 ohms"
+    },
+    "substituteIds": [
+      "hp-02",
+      "hp-03"
+    ],
+    "productId": "hp-01",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "sellingPrice": 2800,
+    "stock": 23
+  },
+  {
+    "id": "hp-02",
+    "name": "boAt Rockerz 550 Over-Ear Wireless Headphones (50mm Drivers)",
+    "category": "headphones",
+    "tier": "mid",
+    "brand": "boAt",
+    "retailPrice": 2400,
+    "costPrice": 1600,
+    "rating": 4.5,
+    "reviewsCount": 8700,
+    "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "50mm Dynamic Bass Drivers",
+      "20 Hours Playtime",
+      "Physical Noise Isolation",
+      "Dual Mode BT + Aux"
+    ],
+    "specs": {
+      "Driver": "50 mm",
+      "Playtime": "20 Hours",
+      "Bluetooth": "v5.0"
+    },
+    "substituteIds": [
+      "hp-01",
+      "hp-03"
+    ],
+    "productId": "hp-02",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "sellingPrice": 2400,
+    "stock": 24
+  },
+  {
+    "id": "hp-03",
+    "name": "Zebronics Zeb-Thunder Wireless BT Headphone",
+    "category": "headphones",
+    "tier": "budget",
+    "brand": "Zebronics",
+    "retailPrice": 1800,
+    "costPrice": 1150,
+    "rating": 4.2,
+    "reviewsCount": 6200,
+    "imageUrl": "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Comfortable Ear Cushions",
+      "FM Radio & Micro SD Slot",
+      "9 Hours Playtime",
+      "Built-in Mic"
+    ],
+    "specs": {
+      "Driver": "40 mm",
+      "Playtime": "9 Hours",
+      "Connectivity": "BT + 3.5mm"
+    },
+    "substituteIds": [
+      "hp-02"
+    ],
+    "productId": "hp-03",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "sellingPrice": 1800,
+    "stock": 25
+  },
+  {
+    "id": "hp-04",
+    "name": "OnePlus Nord Buds 2 TWS Earbuds with ANC",
+    "category": "headphones",
+    "tier": "mid",
+    "brand": "OnePlus",
+    "retailPrice": 2299,
+    "costPrice": 1550,
+    "rating": 4.6,
+    "reviewsCount": 4200,
+    "imageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "25dB Active Noise Cancellation",
+      "12.4mm Titanized Driver",
+      "36 Hours Total Battery",
+      "Fast Charge"
+    ],
+    "specs": {
+      "ANC": "25dB",
+      "Battery": "36 Hours",
+      "IP Rating": "IP55"
+    },
+    "substituteIds": [
+      "hp-02"
+    ],
+    "productId": "hp-04",
+    "merchantId": "merchant-pro",
+    "merchantName": "ProGear Direct",
+    "sellingPrice": 2299,
+    "stock": 26
+  },
+  {
+    "id": "mon-01",
+    "name": "LG UltraGear 24\" IPS 144Hz Gaming Monitor (1ms)",
+    "category": "monitor",
+    "tier": "premium",
+    "brand": "LG",
+    "retailPrice": 9500,
+    "costPrice": 7200,
+    "rating": 4.8,
+    "reviewsCount": 2100,
+    "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "144Hz Refresh Rate",
+      "1ms MBR Response Time",
+      "AMD FreeSync Premium",
+      "sRGB 99% Color Gamut"
+    ],
+    "specs": {
+      "Resolution": "1920 x 1080 FHD",
+      "Panel": "IPS",
+      "Ports": "HDMI x2, DP x1"
+    },
+    "substituteIds": [
+      "mon-02",
+      "mon-03"
+    ],
+    "productId": "mon-01",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "sellingPrice": 9500,
+    "stock": 27
+  },
+  {
+    "id": "mon-02",
+    "name": "Acer EK240Y 23.8\" Full HD IPS Monitor 100Hz",
+    "category": "monitor",
+    "tier": "mid",
+    "brand": "Acer",
+    "retailPrice": 7200,
+    "costPrice": 5400,
+    "rating": 4.5,
+    "reviewsCount": 1850,
+    "imageUrl": "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "100Hz Smooth Refresh",
+      "Eye Care BlueLightShield",
+      "ZeroFrame Ultra-thin Bezel",
+      "Flicker-less Tech"
+    ],
+    "specs": {
+      "Resolution": "1920 x 1080",
+      "Panel": "IPS",
+      "Brightness": "250 nits"
+    },
+    "substituteIds": [
+      "mon-01",
+      "mon-03"
+    ],
+    "productId": "mon-02",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "sellingPrice": 7200,
+    "stock": 28
+  },
+  {
+    "id": "mon-03",
+    "name": "Zebronics 20\" LED Slim Desktop Monitor",
+    "category": "monitor",
+    "tier": "budget",
+    "brand": "Zebronics",
+    "retailPrice": 4800,
+    "costPrice": 3600,
+    "rating": 4.1,
+    "reviewsCount": 940,
+    "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "HD+ Crisp Display",
+      "Slim Profile & Wall Mountable",
+      "HDMI & VGA Input",
+      "Anti-Glare Screen"
+    ],
+    "specs": {
+      "Resolution": "1600 x 900",
+      "Panel": "TN",
+      "Refresh": "60Hz"
+    },
+    "substituteIds": [
+      "mon-02"
+    ],
+    "productId": "mon-03",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "sellingPrice": 4800,
+    "stock": 29
+  },
+  {
+    "id": "dm-01",
+    "name": "Razer Strider Hybrid Extra Large Gaming Desk Mat",
+    "category": "desk_mat",
+    "tier": "premium",
+    "brand": "Razer",
+    "retailPrice": 1200,
+    "costPrice": 750,
+    "rating": 4.9,
+    "reviewsCount": 1200,
+    "imageUrl": "https://images.unsplash.com/photo-1616440347437-b1c73416efc2?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Hybrid Soft/Hard Surface",
+      "Anti-fray Stitched Edges",
+      "Water-Resistant Coating",
+      "Anti-Slip Rubber Base"
+    ],
+    "specs": {
+      "Dimensions": "900 x 400 x 3 mm",
+      "Material": "Polyester + Rubber"
+    },
+    "substituteIds": [
+      "dm-02",
+      "dm-03"
+    ],
+    "productId": "dm-01",
+    "merchantId": "merchant-pro",
+    "merchantName": "ProGear Direct",
+    "sellingPrice": 1200,
+    "stock": 30
+  },
+  {
+    "id": "dm-02",
+    "name": "Scarters Extended Vegan Leather Desk Mat (Waterproof)",
+    "category": "desk_mat",
+    "tier": "mid",
+    "brand": "Scarters",
+    "retailPrice": 850,
+    "costPrice": 520,
+    "rating": 4.6,
+    "reviewsCount": 3400,
+    "imageUrl": "https://images.unsplash.com/photo-1593062096033-9a26b09da705?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Premium Dual-Tone PU Leather",
+      "Water & Scratch Resistant",
+      "Easy Wipe Clean",
+      "Reversible Design"
+    ],
+    "specs": {
+      "Dimensions": "800 x 400 x 2 mm",
+      "Material": "Eco PU Leather"
+    },
+    "substituteIds": [
+      "dm-01",
+      "dm-03"
+    ],
+    "productId": "dm-02",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "sellingPrice": 850,
+    "stock": 31
+  },
+  {
+    "id": "dm-03",
+    "name": "Tukzer Stitched Fabric Large Desk Mouse Pad",
+    "category": "desk_mat",
+    "tier": "budget",
+    "brand": "Tukzer",
+    "retailPrice": 499,
+    "costPrice": 280,
+    "rating": 4.3,
+    "reviewsCount": 5100,
+    "imageUrl": "https://images.unsplash.com/photo-1616440347437-b1c73416efc2?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Smooth Micro-Weave Cloth",
+      "Non-slip Rubber Base",
+      "Reinforced Edge Stitching"
+    ],
+    "specs": {
+      "Dimensions": "700 x 300 x 3 mm",
+      "Material": "Natural Rubber"
+    },
+    "substituteIds": [
+      "dm-02"
+    ],
+    "productId": "dm-03",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "sellingPrice": 499,
+    "stock": 32
+  },
+  {
+    "id": "cam-01",
+    "name": "Logitech C922 Pro Stream 1080p 60FPS Webcam",
+    "category": "webcam",
+    "tier": "premium",
+    "brand": "Logitech",
+    "retailPrice": 4500,
+    "costPrice": 3100,
+    "rating": 4.8,
+    "reviewsCount": 4200,
+    "imageUrl": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Full HD 1080p @ 30fps / 720p @ 60fps",
+      "Autofocus & Light Correction",
+      "Dual Stereo Microphones",
+      "Includes Tripod"
+    ],
+    "specs": {
+      "Resolution": "1080p FHD",
+      "FOV": "78 Degrees",
+      "Mount": "Monitor Clip + Tripod"
+    },
+    "substituteIds": [
+      "cam-02",
+      "cam-03"
+    ],
+    "productId": "cam-01",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "sellingPrice": 4500,
+    "stock": 33
+  },
+  {
+    "id": "cam-02",
+    "name": "Lenovo 300 FHD 1080p Web Camera with Privacy Shutter",
+    "category": "webcam",
+    "tier": "mid",
+    "brand": "Lenovo",
+    "retailPrice": 2200,
+    "costPrice": 1450,
+    "rating": 4.5,
+    "reviewsCount": 2100,
+    "imageUrl": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Full HD 1080p CMOS Sensor",
+      "Physical Privacy Shutter",
+      "360-degree Rotation Clip",
+      "Dual Microphones"
+    ],
+    "specs": {
+      "Resolution": "1080p",
+      "FOV": "95 Degrees",
+      "Interface": "USB 2.0"
+    },
+    "substituteIds": [
+      "cam-01",
+      "cam-03"
+    ],
+    "productId": "cam-02",
+    "merchantId": "merchant-pro",
+    "merchantName": "ProGear Direct",
+    "sellingPrice": 2200,
+    "stock": 34
+  },
+  {
+    "id": "cam-03",
+    "name": "Zebronics Zeb-Crystal Clear 720p Webcam",
+    "category": "webcam",
+    "tier": "budget",
+    "brand": "Zebronics",
+    "retailPrice": 1100,
+    "costPrice": 700,
+    "rating": 4.1,
+    "reviewsCount": 1600,
+    "imageUrl": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "720p HD Video",
+      "Night Vision LED Lights",
+      "Integrated Microphone",
+      "Clip Mount"
+    ],
+    "specs": {
+      "Resolution": "720p HD",
+      "Interface": "USB-A"
+    },
+    "substituteIds": [
+      "cam-02"
+    ],
+    "productId": "cam-03",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "sellingPrice": 1100,
+    "stock": 35
+  },
+  {
+    "id": "mic-01",
+    "name": "HyperX SoloCast USB Condenser Microphone",
+    "category": "mic",
+    "tier": "premium",
+    "brand": "HyperX",
+    "retailPrice": 3800,
+    "costPrice": 2600,
+    "rating": 4.8,
+    "reviewsCount": 2900,
+    "imageUrl": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Cardioid Polar Pattern",
+      "Tap-to-Mute Sensor with LED Status",
+      "Flexible Adjustable Stand",
+      "Boom Arm & Mic Stand Threading"
+    ],
+    "specs": {
+      "Sample Rate": "48kHz / 16-bit",
+      "Capsule": "Electret Condenser",
+      "Cable": "2m USB-C"
+    },
+    "substituteIds": [
+      "mic-02",
+      "mic-03"
+    ],
+    "productId": "mic-01",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "sellingPrice": 3800,
+    "stock": 36
+  },
+  {
+    "id": "mic-02",
+    "name": "Fifine K669B Metal USB Studio Condenser Mic",
+    "category": "mic",
+    "tier": "mid",
+    "brand": "Fifine",
+    "retailPrice": 2300,
+    "costPrice": 1500,
+    "rating": 4.6,
+    "reviewsCount": 4800,
+    "imageUrl": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "All-Metal Construction",
+      "Volume Gain Knob on Mic",
+      "Detachable Pivot Mount & Tripod",
+      "Crisp Vocal Pickup"
+    ],
+    "specs": {
+      "Pattern": "Cardioid",
+      "Frequency": "20Hz - 20kHz",
+      "Output": "USB"
+    },
+    "substituteIds": [
+      "mic-01",
+      "mic-03"
+    ],
+    "productId": "mic-02",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "sellingPrice": 2300,
+    "stock": 37
+  },
+  {
+    "id": "mic-03",
+    "name": "Maono AU-400 Lavalier Clip-on Collar Mic",
+    "category": "mic",
+    "tier": "budget",
+    "brand": "Maono",
+    "retailPrice": 750,
+    "costPrice": 420,
+    "rating": 4.3,
+    "reviewsCount": 3100,
+    "imageUrl": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Omnidirectional Mic",
+      "3.5mm TRRS with 6.5mm Adapter",
+      "2m Heavy Duty Cable",
+      "Noise Cancelling Wind Muff"
+    ],
+    "specs": {
+      "Type": "Lavalier Clip-on",
+      "Connector": "3.5mm Aux"
+    },
+    "substituteIds": [
+      "mic-02"
+    ],
+    "productId": "mic-03",
+    "merchantId": "merchant-pro",
+    "merchantName": "ProGear Direct",
+    "sellingPrice": 750,
+    "stock": 38
+  },
+  {
+    "id": "st-01",
+    "name": "Ergotech Aluminum Foldable Ergonomic Laptop Stand",
+    "category": "stand",
+    "tier": "premium",
+    "brand": "Ergotech",
+    "retailPrice": 1400,
+    "costPrice": 850,
+    "rating": 4.9,
+    "reviewsCount": 1800,
+    "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "CNC Machined Aircraft Aluminum",
+      "6 Adjustable Height Angles",
+      "Heat Dissipation Vents",
+      "Silicone Anti-Slip Padding"
+    ],
+    "specs": {
+      "Weight Capacity": "Up to 15kg",
+      "Compatibility": "10 - 17.3 inch Laptops"
+    },
+    "substituteIds": [
+      "st-02",
+      "st-03"
+    ],
+    "productId": "st-01",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "sellingPrice": 1400,
+    "stock": 39
+  },
+  {
+    "id": "st-02",
+    "name": "Portronics My Buddy K Adjustable Laptop Stand",
+    "category": "stand",
+    "tier": "mid",
+    "brand": "Portronics",
+    "retailPrice": 850,
+    "costPrice": 520,
+    "rating": 4.5,
+    "reviewsCount": 4200,
+    "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "9 Height Adjustments",
+      "Integrated Phone Holder",
+      "Foldable & Lightweight",
+      "Ventilated Airflow"
+    ],
+    "specs": {
+      "Material": "ABS + Silicone",
+      "Weight": "280g"
+    },
+    "substituteIds": [
+      "st-01",
+      "st-03"
+    ],
+    "productId": "st-02",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "sellingPrice": 850,
+    "stock": 40
+  },
+  {
+    "id": "st-03",
+    "name": "Gizga Foldable Portable Laptop Riser",
+    "category": "stand",
+    "tier": "budget",
+    "brand": "Gizga",
+    "retailPrice": 499,
+    "costPrice": 290,
+    "rating": 4.2,
+    "reviewsCount": 2100,
+    "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Lightweight Compact Fold",
+      "6 Level Elevation",
+      "Non-slip Rubber Feet"
+    ],
+    "specs": {
+      "Material": "Reinforced Plastic"
+    },
+    "substituteIds": [
+      "st-02"
+    ],
+    "productId": "st-03",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "sellingPrice": 499,
+    "stock": 41
+  },
+  {
+    "id": "spk-01",
+    "name": "Creative Pebble Plus 2.1 USB Powered Desktop Speakers with Subwoofer",
+    "category": "speaker",
+    "tier": "premium",
+    "brand": "Creative",
+    "retailPrice": 2999,
+    "costPrice": 2050,
+    "rating": 4.8,
+    "reviewsCount": 3500,
+    "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "45 Degree Elevated Soundstage",
+      "Down-firing Subwoofer for Deep Bass",
+      "8W RMS Peak Power",
+      "USB Powered"
+    ],
+    "specs": {
+      "Configuration": "2.1 System",
+      "Power": "8W RMS / 16W Peak",
+      "Connectivity": "USB + 3.5mm"
+    },
+    "substituteIds": [
+      "spk-02"
+    ],
+    "productId": "spk-01",
+    "merchantId": "merchant-pro",
+    "merchantName": "ProGear Direct",
+    "sellingPrice": 2999,
+    "stock": 42
+  },
+  {
+    "id": "spk-02",
+    "name": "AmazonBasics 2.0 Dynamic Sound Desktop USB Speakers",
+    "category": "speaker",
+    "tier": "budget",
+    "brand": "AmazonBasics",
+    "retailPrice": 999,
+    "costPrice": 620,
+    "rating": 4.3,
+    "reviewsCount": 5100,
+    "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "Compact Design",
+      "Plug & Play USB",
+      "In-line Volume Control",
+      "Blue LED Lighting"
+    ],
+    "specs": {
+      "Configuration": "2.0 Stereo",
+      "Power": "4W RMS"
+    },
+    "substituteIds": [
+      "spk-01"
+    ],
+    "productId": "spk-02",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "sellingPrice": 999,
+    "stock": 43
+  },
+  {
+    "id": "sw-01",
+    "name": "Noise ColorFit Pro 5 Smartwatch with AMOLED Display & Bluetooth Calling",
+    "category": "smartwatch",
+    "tier": "premium",
+    "brand": "Noise",
+    "retailPrice": 3499,
+    "costPrice": 2350,
+    "rating": 4.7,
+    "reviewsCount": 6700,
+    "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "1.85\" AMOLED Display",
+      "Tru Sync BT Calling",
+      "100+ Sports Modes",
+      "Heart Rate & SpO2 Monitor",
+      "7 Days Battery"
+    ],
+    "specs": {
+      "Display": "AMOLED 60Hz",
+      "Battery": "7 Days",
+      "Water Resistance": "IP68"
+    },
+    "substituteIds": [
+      "sw-02"
+    ],
+    "productId": "sw-01",
+    "merchantId": "merchant-apex",
+    "merchantName": "ApexTech Official Store",
+    "sellingPrice": 3499,
+    "stock": 44
+  },
+  {
+    "id": "sw-02",
+    "name": "Fastrack Reflex Play Plus Smartwatch",
+    "category": "smartwatch",
+    "tier": "mid",
+    "brand": "Fastrack",
+    "retailPrice": 1999,
+    "costPrice": 1350,
+    "rating": 4.4,
+    "reviewsCount": 3200,
+    "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+    "features": [
+      "1.3\" Color Display",
+      "Heart Rate & Sleep Tracker",
+      "Custom Watch Faces",
+      "5 Days Battery"
+    ],
+    "specs": {
+      "Display": "TFT 240x240",
+      "Battery": "5 Days",
+      "Water Resistance": "IP68"
+    },
+    "substituteIds": [
+      "sw-01"
+    ],
+    "productId": "sw-02",
+    "merchantId": "merchant-cyber",
+    "merchantName": "CyberPeripherals India",
+    "sellingPrice": 1999,
+    "stock": 15
+  }
+]
