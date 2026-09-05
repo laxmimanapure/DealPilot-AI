@@ -7,6 +7,7 @@ import plannerRoutes from './routes/planner.js';
 import negotiateRoutes from './routes/negotiate.js';
 import merchantRoutes from './routes/merchant.js';
 import checkoutRoutes from './routes/checkout.js';
+import paymentRoutes from './routes/payment.js';
 import authRoutes from './routes/auth.js';
 
 const app = express();
@@ -21,6 +22,7 @@ app.use('/api/planner', plannerRoutes);
 app.use('/api/negotiate', negotiateRoutes);
 app.use('/api/merchant', merchantRoutes);
 app.use('/api/checkout', checkoutRoutes);
+app.use('/api/payment', paymentRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
@@ -28,7 +30,7 @@ app.get('/api/health', (req, res) => {
     status: 'online',
     service: 'DealPilot AI Backend & Policy Engine',
     version: '1.0.0',
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
   });
 });
 
@@ -37,10 +39,26 @@ const PORT = config.port;
 app.listen(PORT, async () => {
   console.log(`🚀 DealPilot AI Server running on http://localhost:${PORT}`);
   console.log(`🛡️  Merchant Policy Guardrails active: Max 10% discount, ₹500 cap, 8% min margin`);
-  
+
+  // Environment Debugging Check for Razorpay credentials (safe - never prints secrets)
+  if (!process.env.RAZORPAY_KEY_ID) {
+    console.error('❌ RAZORPAY_KEY_ID is missing from environment variables');
+  }
+  if (!process.env.RAZORPAY_KEY_SECRET) {
+    console.error('❌ RAZORPAY_KEY_SECRET is missing from environment variables');
+  }
+  const isKeyConfigured = Boolean(process.env.RAZORPAY_KEY_ID && process.env.RAZORPAY_KEY_SECRET);
+  const isTestMode = (process.env.RAZORPAY_KEY_ID || '').startsWith('rzp_test_');
+  console.log(`💳 Razorpay Key configured: ${isKeyConfigured}`);
+  console.log(`💳 Razorpay Test Mode: ${isTestMode}`);
+
+  if ((process.env.RAZORPAY_KEY_ID || '').startsWith('rzp_live_')) {
+    console.error('⚠️ WARNING: Live Razorpay key detected! Only rzp_test_ keys should be used for this buildathon.');
+  }
+
   // Connect to MongoDB Atlas (or graceful dev fallback)
   await connectDB();
-  
+
   // Seed demo accounts for seamless judging and 1-click test logins
   await seedDemoAccounts();
 });

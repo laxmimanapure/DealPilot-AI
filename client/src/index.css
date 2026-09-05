@@ -60,3 +60,46 @@
   background-size: 200% 100%;
   animation: shimmer 2.5s infinite;
 }
+
+/* ========================================================================= */
+/* PRINT OPTIMIZATION FOR PROFESSIONAL A4 PAYMENT RECEIPT / INVOICE          */
+/* Works seamlessly across Chrome, Edge, and all modern browsers             */
+/* ========================================================================= */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 15mm;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide standard page elements */
+  nav, header, footer, aside, .no-print, .print\:hidden {
+    display: none !important;
+  }
+
+  /* Make receipt fill page cleanly */
+  #print-invoice-root {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Avoid cutting sections or tables across pages */
+  table, tr, tbody, .p-4 {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}

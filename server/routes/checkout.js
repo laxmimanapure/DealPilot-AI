@@ -1,5 +1,6 @@
 import express from 'express';
 import { createOrder, verifyAndCompletePayment, getCompletedOrders } from '../services/paymentService.js';
+import { getRazorpayKeyId } from '../services/razorpay.js';
 
 const router = express.Router();
 
@@ -7,48 +8,50 @@ const router = express.Router();
 router.post('/create-order', async (req, res) => {
   try {
     const { amount, currency, receipt, notes } = req.body;
-    if (!amount || amount <= 0) {
+    if (!amount || Number(amount) <= 0) {
       return res.status(400).json({ success: false, error: 'Valid amount is required' });
     }
 
-    const order = await createOrder({
-      amount,
+    const orderRes = await createOrder({
+      amount: Number(amount),
       currency: currency || 'INR',
       receipt,
-      notes
+      notes,
     });
 
-    res.json({ success: true, order });
+    res.json({
+      success: true,
+      order: orderRes.order,
+      keyId: orderRes.keyId || getRazorpayKeyId(),
+    });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
   }
 });
 
 // POST /api/checkout/verify - Verify payment & lock in deal
-router.post('/verify', (req, res) => {
+router.post('/verify', async (req, res) => {
   try {
-    const {
-      razorpayOrderId,
-      razorpayPaymentId,
-      razorpaySignature,
-      orderDetails
-    } = req.body;
+    const razorpayOrderId = req.body.razorpayOrderId || req.body.razorpay_order_id;
+    const razorpayPaymentId = req.body.razorpayPaymentId || req.body.razorpay_payment_id;
+    const razorpaySignature = req.body.razorpaySignature || req.body.razorpay_signature;
+    const orderDetails = req.body.orderDetails || req.body;
 
     if (!orderDetails) {
       return res.status(400).json({ success: false, error: 'Order details are required' });
     }
 
-    const completedOrder = verifyAndCompletePayment({
-      razorpayOrderId: razorpayOrderId || `order_sim_${Date.now()}`,
-      razorpayPaymentId: razorpayPaymentId || `pay_sim_${Date.now()}`,
+    const completedOrder = await verifyAndCompletePayment({
+      razorpayOrderId: razorpayOrderId || `order_test_${Date.now()}`,
+      razorpayPaymentId: razorpayPaymentId || `pay_rzp_${Date.now()}`,
       razorpaySignature,
-      orderDetails
+      orderDetails,
     });
 
     res.json({
       success: true,
       order: completedOrder,
-      message: 'Payment verified and deal successfully locked!'
+      message: 'Payment verified and deal successfully locked!',
     });
   } catch (err) {
     res.status(400).json({ success: false, error: err.message });
@@ -56,9 +59,9 @@ router.post('/verify', (req, res) => {
 });
 
 // GET /api/checkout/orders - List all orders
-router.get('/orders', (req, res) => {
+router.get('/orders', async (req, res) => {
   try {
-    const orders = getCompletedOrders();
+    const orders = await getCompletedOrders();
     res.json({ success: true, orders });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });

@@ -95,24 +95,53 @@ export async function getMerchantAnalytics() {
   return res.json();
 }
 
-export async function createCheckoutOrder({ amount, currency, receipt, notes }) {
-  const res = await fetch(`${API_BASE}/checkout/create-order`, {
+export async function createPaymentOrder({ amount, currency = 'INR', receipt, notes }) {
+  const res = await fetch(`${API_BASE}/payment/create-order`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ amount, currency, receipt, notes })
   });
-  if (!res.ok) throw new Error('Failed to create order');
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    throw new Error(data.error || 'Failed to create payment order');
+  }
   return res.json();
 }
 
-export async function verifyPayment({ razorpayOrderId, razorpayPaymentId, razorpaySignature, orderDetails }) {
-  const res = await fetch(`${API_BASE}/checkout/verify`, {
+export async function verifyPaymentResponse({
+  razorpay_order_id,
+  razorpay_payment_id,
+  razorpay_signature,
+  orderDetails
+}) {
+  const res = await fetch(`${API_BASE}/payment/verify`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ razorpayOrderId, razorpayPaymentId, razorpaySignature, orderDetails })
+    body: JSON.stringify({
+      razorpay_order_id,
+      razorpay_payment_id,
+      razorpay_signature,
+      orderDetails
+    })
   });
-  if (!res.ok) throw new Error('Failed to verify payment');
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    throw new Error(data.error || 'Payment verification failed');
+  }
   return res.json();
+}
+
+export async function createCheckoutOrder({ amount, currency = 'INR', receipt, notes }) {
+  return createPaymentOrder({ amount, currency, receipt, notes });
+}
+
+export async function verifyPayment({ razorpayOrderId, razorpayPaymentId, razorpaySignature, orderDetails }) {
+  return verifyPaymentResponse({
+    razorpay_order_id: razorpayOrderId,
+    razorpay_payment_id: razorpayPaymentId,
+    razorpay_signature: razorpaySignature,
+    orderDetails
+  });
 }
 
 export async function getCompletedOrders() {

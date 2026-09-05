@@ -1,5 +1,751 @@
 [
   {
+    "id": "audit-payment-1788609310924",
+    "timestamp": "2026-09-05T11:55:10.924Z",
+    "customer": "Aarav Sharma",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 5499,
+    "customerBudget": 5224.05,
+    "customerOffer": 5224.05,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3761,
+    "finalMarginPercent": 28,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-310924 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹1463.0500000000002 (28% margin) while saving customer ₹274.95.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-payment-1788609244605",
+    "timestamp": "2026-09-05T11:54:04.605Z",
+    "customer": "Alex Rivera",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Mechanical Wireless Keyboard"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 2000,
+    "customerOffer": 1800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 200,
+    "aiProposedPrice": 1800,
+    "wholesaleCost": 1400,
+    "finalMarginPercent": 22.2,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-244604 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹400 (22.2% margin) while saving customer ₹200.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-payment-1788607422390",
+    "timestamp": "2026-09-05T11:23:42.390Z",
+    "customer": "Aarav Sharma",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 5499,
+    "customerBudget": 5224.05,
+    "customerOffer": 5224.05,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3761,
+    "finalMarginPercent": 28,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-422390 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹1463.0500000000002 (28% margin) while saving customer ₹274.95.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788607339138-754",
+    "timestamp": "2026-09-05T11:22:19.138Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 4799,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 24.2,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹274.95",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "24.2%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 2,
+        "passed": true
+      }
+    },
+    "verdict": "FINAL_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 2/2 offering ₹5224.05 (-₹274.95).",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788607337316-305",
+    "timestamp": "2026-09-05T11:22:17.316Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788607139890-602",
+    "timestamp": "2026-09-05T11:18:59.890Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 4799,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 24.2,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹274.95",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "24.2%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 2,
+        "passed": true
+      }
+    },
+    "verdict": "FINAL_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 2/2 offering ₹5224.05 (-₹274.95).",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788607138395-845",
+    "timestamp": "2026-09-05T11:18:58.395Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788606881282-17",
+    "timestamp": "2026-09-05T11:14:41.282Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 4799,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 24.2,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹274.95",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "24.2%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 2,
+        "passed": true
+      }
+    },
+    "verdict": "FINAL_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 2/2 offering ₹5224.05 (-₹274.95).",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788606878639-252",
+    "timestamp": "2026-09-05T11:14:38.639Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788606608273-290",
+    "timestamp": "2026-09-05T11:10:08.273Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 4799,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 24.2,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹274.95",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "24.2%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 2,
+        "passed": true
+      }
+    },
+    "verdict": "FINAL_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 2/2 offering ₹5224.05 (-₹274.95).",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788606606400-924",
+    "timestamp": "2026-09-05T11:10:06.400Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-payment-1788606459156",
+    "timestamp": "2026-09-05T11:07:39.156Z",
+    "customer": "Alex Rivera",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Mechanical Wireless Keyboard"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 2000,
+    "customerOffer": 1800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 200,
+    "aiProposedPrice": 1800,
+    "wholesaleCost": 1400,
+    "finalMarginPercent": 22.2,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-459155 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹400 (22.2% margin) while saving customer ₹200.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788605458525-682",
+    "timestamp": "2026-09-05T10:50:58.525Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 5000,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 24.2,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹274.95",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "24.2%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 2,
+        "passed": true
+      }
+    },
+    "verdict": "FINAL_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 2/2 offering ₹5224.05 (-₹274.95).",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788605444298-468",
+    "timestamp": "2026-09-05T10:50:44.298Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788604718503-866",
+    "timestamp": "2026-09-05T10:38:38.503Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 4799,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 274.95,
+    "aiProposedPrice": 5224.05,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 24.2,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹274.95",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "24.2%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 2,
+        "passed": true
+      }
+    },
+    "verdict": "FINAL_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 2/2 offering ₹5224.05 (-₹274.95).",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788604714066-837",
+    "timestamp": "2026-09-05T10:38:34.066Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)"
+    ],
+    "planType": "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+    "originalTotal": 5499,
+    "customerBudget": 5499,
+    "customerOffer": 5000,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 151,
+    "aiProposedPrice": 5348,
+    "wholesaleCost": 3959,
+    "finalMarginPercent": 26,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.7%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹151",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹5348 (-₹151).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788604624308-568",
+    "timestamp": "2026-09-05T10:37:04.308Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+      "Razer DeathAdder Essential 6400 DPI Ergonomic Mouse",
+      "Audio-Technica ATH-M20x Studio Monitor Headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 9199,
+    "customerBudget": 5000,
+    "customerOffer": 5000,
+    "negotiationRound": 2,
+    "aiProposedDiscount": 459.95,
+    "aiProposedPrice": 8739.05,
+    "wholesaleCost": 6600,
+    "finalMarginPercent": 24.5,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "5%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹459.95",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "24.5%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 2,
+        "passed": true
+      }
+    },
+    "verdict": "FINAL_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 2/2 offering ₹8739.05 (-₹459.95).",
+    "outcome": "FINAL_OFFER_LOCKED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-1788604624305-725",
+    "timestamp": "2026-09-05T10:37:04.305Z",
+    "customer": "Customer",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Wireless Mechanical Keyboard (Version 2, RGB Hot-Swap)",
+      "Razer DeathAdder Essential 6400 DPI Ergonomic Mouse",
+      "Audio-Technica ATH-M20x Studio Monitor Headphones"
+    ],
+    "planType": "Best Quality",
+    "originalTotal": 9199,
+    "customerBudget": 5000,
+    "customerOffer": 4800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 253,
+    "aiProposedPrice": 8946,
+    "wholesaleCost": 6600,
+    "finalMarginPercent": 26.2,
+    "ruleChecks": {
+      "maxDiscountPercent": {
+        "limit": "5%",
+        "value": "2.8%",
+        "passed": true
+      },
+      "maxDiscountAmount": {
+        "limit": "₹500",
+        "value": "₹253",
+        "passed": true
+      },
+      "minProfitMargin": {
+        "limit": "8%",
+        "value": "26.2%",
+        "passed": true
+      },
+      "maxRounds": {
+        "limit": 2,
+        "value": 1,
+        "passed": true
+      }
+    },
+    "verdict": "COUNTER_OFFER_CLAMPED",
+    "explanation": "OmniTech Solutions policy (max 5%, ₹500 cap, min 8% margin) applied. Round 1/2 offering ₹8946 (-₹253).",
+    "outcome": "COUNTER_OFFER_CLAMPED",
+    "perksAdded": []
+  },
+  {
+    "id": "audit-payment-1788604582973",
+    "timestamp": "2026-09-05T10:36:22.973Z",
+    "customer": "Alex Rivera",
+    "merchantId": "merchant-omni",
+    "merchantName": "OmniTech Solutions",
+    "requestedItems": [
+      "Keychron K2 Mechanical Wireless Keyboard"
+    ],
+    "planType": "OmniTech Solutions",
+    "originalTotal": 2000,
+    "customerOffer": 1800,
+    "negotiationRound": 1,
+    "aiProposedDiscount": 200,
+    "aiProposedPrice": 1800,
+    "wholesaleCost": 1400,
+    "finalMarginPercent": 22.2,
+    "verdict": "PAYMENT_CONFIRMED",
+    "explanation": "Transaction DP-ORD-582972 successfully processed via Razorpay. Sold by OmniTech Solutions. DealPilot AI secured merchant profit of ₹400 (22.2% margin) while saving customer ₹200.",
+    "outcome": "CHECKOUT_SUCCESSFUL",
+    "perksAdded": []
+  },
+  {
     "id": "audit-payment-1788603286590",
     "timestamp": "2026-09-05T10:14:46.590Z",
     "customer": "Aarav Sharma",

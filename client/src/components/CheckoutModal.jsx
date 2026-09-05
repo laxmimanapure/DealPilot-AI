@@ -12,11 +12,31 @@ import {
   QrCode,
   Smartphone,
   ShieldCheck,
-  Package
+  Package,
+  AlertCircle
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { formatINR } from '../utils/currency';
-import { createCheckoutOrder, verifyPayment } from '../services/api';
+import { createPaymentOrder, verifyPaymentResponse } from '../services/api';
+import PaymentReceipt from './PaymentReceipt';
+
+/**
+ * Loads the official Razorpay Checkout SDK dynamically if not already loaded
+ */
+const loadRazorpayScript = () => {
+  return new Promise((resolve) => {
+    if (typeof window !== 'undefined' && window.Razorpay) {
+      resolve(true);
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.async = true;
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+};
 
 export default function CheckoutModal({
   isOpen,
@@ -26,113 +46,220 @@ export default function CheckoutModal({
 }) {
   if (!isOpen || !dealData) return null;
 
-  // Resolved product & merchant
-  const resolvedProduct = dealData.resolvedProduct || (dealData.items && dealData.items[0]) || dealData.plan?.resolvedProduct || dealData.plan || {};
-  const merchantName = dealData.merchantName || dealData.soldBy || dealData.plan?.soldBy || 'OmniTech Solutions';
-  const merchantId = dealData.merchantId || dealData.plan?.merchantId || 'merchant-omni';
-  const productName = resolvedProduct.name || dealData.plan?.title || 'Selected Marketplace Product';
-  const productId = resolvedProduct.productId || resolvedProduct.id || 'prod_item';
+  // Resolved product & merchant details
+  const resolvedProduct =
+    dealData.resolvedProduct ||
+    (dealData.items && dealData.items[0]) ||
+    dealData.plan?.resolvedProduct ||
+    dealData.plan ||
+    {};
+  const merchantName =
+    dealData.merchantName ||
+    dealData.soldBy ||
+    dealData.plan?.soldBy ||
+    'OmniTech Solutions';
+  const merchantId =
+    dealData.merchantId || dealData.plan?.merchantId || 'merchant-omni';
+  const productName =
+    resolvedProduct.name || dealData.plan?.title || 'Selected Marketplace Product';
+  const productId =
+    resolvedProduct.productId || resolvedProduct.id || 'prod_item';
 
   const [customerName, setCustomerName] = useState('Aarav Sharma');
   const [customerEmail, setCustomerEmail] = useState('aarav.sharma@example.com');
-  const [paymentMethod, setPaymentMethod] = useState('upi'); // 'upi' | 'card' | 'netbanking'
+  const [customerPhone, setCustomerPhone] = useState('+91 98765 43210');
+  const [customerAddress, setCustomerAddress] = useState('402, Green Glen Residency, Bellandur, Bengaluru, Karnataka - 560103');
   const [isProcessing, setIsProcessing] = useState(false);
   const [paymentCompleted, setPaymentCompleted] = useState(false);
   const [completedReceipt, setCompletedReceipt] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const finalAmount = Number(dealData.finalPrice || dealData.finalAmount || dealData.totalPrice || 5000);
-  const originalTotal = Number(dealData.originalTotal || dealData.subtotal || dealData.totalPrice || finalAmount);
-  const discountAmount = Number(dealData.discountAmount || dealData.discount || 0);
+  const finalAmount = Number(
+    dealData.finalPrice ||
+      dealData.finalAmount ||
+      dealData.totalPrice ||
+      5000
+  );
+  const originalTotal = Number(
+    dealData.originalTotal ||
+      dealData.subtotal ||
+      dealData.totalPrice ||
+      finalAmount
+  );
+  const discountAmount = Number(
+    dealData.discountAmount || dealData.discount || 0
+  );
 
-  const handlePay = async (e) => {
+  const handlePayNow = async (e) => {
     e?.preventDefault();
+    setErrorMessage('');
     setIsProcessing(true);
 
     try {
-      // 1. Create order on backend
-      const orderRes = await createCheckoutOrder({
+      // 1. Ensure Razorpay Checkout script is loaded
+      await loadRazorpayScript();
+      if (!window.Razorpay) {
+        throw new Error('Razorpay Checkout SDK failed to load');
+      }
+
+      // 2. Call backend to create Razorpay test order (in paise)
+      const orderRes = await createPaymentOrder({
         amount: finalAmount,
         currency: 'INR',
-        receipt: `rcpt_${Date.now()}`,
+        receipt: `dp_${Date.now()}`,
         notes: {
           merchantId,
           merchantName,
           product: productName,
-          discount: discountAmount
-        }
+          discount: discountAmount,
+        },
       });
 
-      // 2. Simulate Razorpay Gateway Processing
-      await new Promise((resolve) => setTimeout(resolve, 1200));
+      if (!orderRes.success || !orderRes.order) {
+        throw new Error(orderRes.error || orderRes.message || 'Unable to create Razorpay order');
+      }
 
-      // 3. Verify Payment on backend (Exact schema in Requirement 10)
-      const verifyRes = await verifyPayment({
-        razorpayOrderId: orderRes.order?.id || `order_test_${Date.now()}`,
-        razorpayPaymentId: `pay_test_${Date.now()}_${Math.floor(Math.random() * 1000)}`,
-        razorpaySignature: 'mock_signature_valid',
-        orderDetails: {
-          clientId: `client_${Date.now().toString().slice(-4)}`,
-          customerName,
-          customerEmail,
+      const razorpayOrder = orderRes.order;
+      const keyId = orderRes.keyId;
+
+      if (!keyId) {
+        throw new Error('Razorpay Key ID not configured. Please set RAZORPAY_KEY_ID in backend .env');
+      }
+
+      // 3. Configure official Razorpay Checkout modal
+      const options = {
+        key: keyId,
+        amount: razorpayOrder.amount, // in paise
+        currency: razorpayOrder.currency || 'INR',
+        name: 'DealPilot',
+        description: `${productName} — ${merchantName}`,
+        image:
+          resolvedProduct.imageUrl ||
+          'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=200&q=80',
+        order_id: razorpayOrder.id,
+        prefill: {
+          name: customerName,
+          email: customerEmail,
+          contact: customerPhone.replace(/[^0-9]/g, '') || '9876543210',
+        },
+        notes: {
           merchantId,
           merchantName,
-          items: [
-            {
-              productId,
-              productName,
-              quantity: 1,
-              originalPrice: originalTotal,
-              negotiatedPrice: finalAmount
+          platform: 'DealPilot AI Agentic Commerce',
+          mode: 'TEST_MODE',
+        },
+        theme: {
+          color: '#10b981', // Emerald theme matching DealPilot
+        },
+        // 4. Handle test payment response
+        handler: async function (response) {
+          try {
+            setIsProcessing(true);
+
+            // Send signature and order details to backend for HMAC SHA256 verification
+            const verifyRes = await verifyPaymentResponse({
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+              orderDetails: {
+                clientId:
+                  dealData.clientId || `client_${Date.now().toString().slice(-4)}`,
+                customerName,
+                customerEmail,
+                customerPhone,
+                customerAddress,
+                merchantId,
+                merchantName,
+                items: [
+                  {
+                    productId,
+                    productName,
+                    quantity: 1,
+                    originalPrice: originalTotal,
+                    negotiatedPrice: finalAmount,
+                  },
+                ],
+                subtotal: originalTotal,
+                discount: discountAmount,
+                discountAmount,
+                finalAmount,
+                finalPrice: finalAmount,
+                originalTotal,
+                wholesaleCost:
+                  dealData.wholesaleCost || Math.round(finalAmount * 0.72),
+                profitMarginPercent: dealData.profitMarginPercent || 25,
+                paymentMethod: 'razorpay',
+                paymentStatus: 'paid',
+                round: dealData.round || 1,
+                customerBudget: dealData.customerBudget || finalAmount,
+                negotiation: {
+                  enabled: Boolean(discountAmount > 0),
+                  rounds: dealData.round || 1,
+                  finalDiscount: discountAmount,
+                  finalPrice: finalAmount,
+                },
+              },
+            });
+
+            if (verifyRes.success && verifyRes.order) {
+              setCompletedReceipt(verifyRes.order);
+              setPaymentCompleted(true);
+              onPaymentSuccess?.(verifyRes.order);
+
+              // Celebration confetti
+              confetti({
+                particleCount: 120,
+                spread: 80,
+                origin: { y: 0.6 },
+              });
+            } else {
+              setErrorMessage('Payment verification failed. Please try again.');
             }
-          ],
-          subtotal: originalTotal,
-          discount: discountAmount,
-          discountAmount,
-          finalAmount,
-          finalPrice: finalAmount,
-          originalTotal,
-          wholesaleCost: dealData.wholesaleCost || Math.round(finalAmount * 0.72),
-          profitMarginPercent: dealData.profitMarginPercent || 25,
-          paymentMethod: paymentMethod.toUpperCase() + ' (Razorpay Gateway)',
-          round: dealData.round || 1,
-          customerBudget: dealData.customerBudget || finalAmount,
-          negotiation: {
-            enabled: Boolean(discountAmount > 0),
-            rounds: dealData.round || 1,
-            finalDiscount: discountAmount,
-            finalPrice: finalAmount
+          } catch (verifyErr) {
+            console.error('Payment verification error:', verifyErr);
+            setErrorMessage('Payment verification failed. Please try again.');
+          } finally {
+            setIsProcessing(false);
           }
-        }
+        },
+        modal: {
+          ondismiss: function () {
+            setIsProcessing(false);
+            setErrorMessage('Payment cancelled. Your order has not been charged.');
+          },
+        },
+      };
+
+      // 5. Open the Razorpay Checkout popup
+      const razorpayInstance = new window.Razorpay(options);
+      razorpayInstance.on('payment.failed', function (resp) {
+        setIsProcessing(false);
+        setErrorMessage(
+          resp.error?.description ||
+            'Payment failed. Please try again with another test payment method.'
+        );
       });
-
-      if (verifyRes.success && verifyRes.order) {
-        setCompletedReceipt(verifyRes.order);
-        setPaymentCompleted(true);
-        onPaymentSuccess?.(verifyRes.order);
-
-        // Confetti celebration
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { y: 0.6 }
-        });
-      }
+      razorpayInstance.open();
     } catch (err) {
-      console.error('Payment error:', err);
-      alert('Payment processing encountered an issue. Please try again.');
-    } finally {
+      console.error('Payment checkout error:', err);
       setIsProcessing(false);
+      setErrorMessage(
+        err.message || 'Payment processing encountered an issue. Please try again.'
+      );
     }
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md animate-in fade-in">
-      <div className="bg-[#0c1017] border border-white/[0.12] rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl relative overflow-hidden text-white">
-        
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/80 backdrop-blur-md animate-in fade-in print:p-0 print:bg-white print:static print:inset-auto print:block">
+      <div
+        className={`bg-[#0c1017] border border-white/[0.12] rounded-3xl w-full p-5 sm:p-8 shadow-2xl relative overflow-y-auto max-h-[92vh] text-white transition-all print:border-0 print:p-0 print:m-0 print:max-w-full print:max-h-none print:shadow-none print:bg-white print:text-black ${
+          paymentCompleted ? 'max-w-3xl' : 'max-w-xl'
+        }`}
+      >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/[0.05] transition-colors"
+          className="no-print absolute top-4 right-4 p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/[0.05] transition-colors z-10"
         >
           <X className="w-5 h-5" />
         </button>
@@ -150,26 +277,45 @@ export default function CheckoutModal({
                 </h2>
                 <p className="text-xs text-slate-400 flex items-center gap-1.5 mt-0.5">
                   <span>Sold by</span>
-                  <strong className="text-emerald-400 font-semibold">{merchantName}</strong>
+                  <strong className="text-emerald-400 font-semibold">
+                    {merchantName}
+                  </strong>
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                   <span>Verified Seller</span>
                 </p>
               </div>
             </div>
 
-            {/* Resolved Item Card */}
+            {/* Error Message Banner */}
+            {errorMessage && (
+              <div className="mb-4 p-3.5 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs flex items-center gap-2.5 animate-in fade-in">
+                <AlertCircle className="w-4 h-4 shrink-0 text-red-400" />
+                <span>{errorMessage}</span>
+              </div>
+            )}
+
+            {/* Product Item Card */}
             <div className="p-4 rounded-2xl bg-[#07090e] border border-white/[0.08] mb-5 space-y-3">
               <div className="flex items-start justify-between gap-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-slate-400">
-                    <Package className="w-5 h-5" />
-                  </div>
+                  {resolvedProduct.imageUrl ? (
+                    <img
+                      src={resolvedProduct.imageUrl}
+                      alt={productName}
+                      className="w-12 h-12 rounded-xl object-cover border border-white/[0.08]"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-slate-400">
+                      <Package className="w-6 h-6" />
+                    </div>
+                  )}
                   <div>
                     <h4 className="text-sm font-bold text-white leading-snug">
                       {productName}
                     </h4>
                     <p className="text-xs text-slate-400 mt-0.5">
-                      Quantity: 1 • Seller: <span className="text-slate-300">{merchantName}</span>
+                      Quantity: 1 • Seller:{' '}
+                      <span className="text-slate-300">{merchantName}</span>
                     </p>
                   </div>
                 </div>
@@ -189,27 +335,35 @@ export default function CheckoutModal({
               {/* Price Breakdown */}
               <div className="pt-3 border-t border-white/[0.06] text-xs space-y-1.5 text-slate-400">
                 <div className="flex justify-between">
-                  <span>Listed Subtotal</span>
-                  <span className="font-mono text-slate-200">{formatINR(originalTotal)}</span>
+                  <span>Product Price</span>
+                  <span className="font-mono text-slate-200">
+                    {formatINR(originalTotal)}
+                  </span>
                 </div>
                 {discountAmount > 0 && (
                   <div className="flex justify-between text-emerald-400 font-semibold">
                     <span>Negotiated Savings</span>
-                    <span className="font-mono">- {formatINR(discountAmount)}</span>
+                    <span className="font-mono">
+                      - {formatINR(discountAmount)}
+                    </span>
                   </div>
                 )}
                 <div className="flex justify-between text-white font-bold text-sm pt-1.5 border-t border-white/[0.06]">
-                  <span>Total Amount to Pay</span>
-                  <span className="font-mono text-emerald-400">{formatINR(finalAmount)}</span>
+                  <span>Final Amount to Pay</span>
+                  <span className="font-mono text-emerald-400">
+                    {formatINR(finalAmount)}
+                  </span>
                 </div>
               </div>
             </div>
 
-            {/* Form */}
-            <form onSubmit={handlePay} className="space-y-4">
+            {/* Customer Details Form */}
+            <form onSubmit={handlePayNow} className="space-y-4">
               <div className="grid grid-cols-2 gap-3 text-xs">
                 <div>
-                  <label className="block text-slate-400 font-semibold mb-1">Full Name</label>
+                  <label className="block text-slate-400 font-semibold mb-1">
+                    Customer Name
+                  </label>
                   <input
                     type="text"
                     required
@@ -219,7 +373,9 @@ export default function CheckoutModal({
                   />
                 </div>
                 <div>
-                  <label className="block text-slate-400 font-semibold mb-1">Email Address</label>
+                  <label className="block text-slate-400 font-semibold mb-1">
+                    Email Address
+                  </label>
                   <input
                     type="email"
                     required
@@ -230,49 +386,45 @@ export default function CheckoutModal({
                 </div>
               </div>
 
-              {/* Payment Methods */}
-              <div className="space-y-1.5">
-                <label className="block text-xs font-semibold text-slate-400">Payment Channel (Razorpay)</label>
-                <div className="grid grid-cols-3 gap-2">
-                  {[
-                    { id: 'upi', label: 'UPI / QR', icon: QrCode },
-                    { id: 'card', label: 'Cards', icon: CreditCard },
-                    { id: 'netbanking', label: 'NetBanking', icon: Smartphone }
-                  ].map((m) => {
-                    const Icon = m.icon;
-                    return (
-                      <button
-                        type="button"
-                        key={m.id}
-                        onClick={() => setPaymentMethod(m.id)}
-                        className={`p-2.5 rounded-xl border text-xs font-medium flex items-center justify-center space-x-2 transition-all ${
-                          paymentMethod === m.id
-                            ? 'bg-emerald-500/10 border-emerald-500/40 text-emerald-400 font-bold'
-                            : 'bg-[#07090e] border-white/[0.08] text-slate-400 hover:text-white'
-                        }`}
-                      >
-                        <Icon className="w-3.5 h-3.5" />
-                        <span>{m.label}</span>
-                      </button>
-                    );
-                  })}
-                </div>
+              <div className="text-xs">
+                <label className="block text-slate-400 font-semibold mb-1">
+                  Contact Phone (for Razorpay Test Notifications)
+                </label>
+                <input
+                  type="text"
+                  value={customerPhone}
+                  onChange={(e) => setCustomerPhone(e.target.value)}
+                  className="w-full px-3.5 py-2.5 bg-[#07090e] border border-white/[0.08] rounded-xl text-white focus:outline-none focus:border-emerald-500"
+                />
               </div>
 
-              {/* Submit CTA */}
+              <div className="text-xs">
+                <label className="block text-slate-400 font-semibold mb-1">
+                  Shipping / Billing Address
+                </label>
+                <input
+                  type="text"
+                  value={customerAddress}
+                  onChange={(e) => setCustomerAddress(e.target.value)}
+                  placeholder="Street, Area, City, State, PIN"
+                  className="w-full px-3.5 py-2.5 bg-[#07090e] border border-white/[0.08] rounded-xl text-white focus:outline-none focus:border-emerald-500"
+                />
+              </div>
+
+              {/* Pay Now Button */}
               <button
                 type="submit"
                 disabled={isProcessing}
-                className="w-full py-3 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black text-sm font-extrabold transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center space-x-2 mt-2 disabled:opacity-50"
+                className="w-full py-3.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black text-sm font-extrabold transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center space-x-2 mt-3 disabled:opacity-50"
               >
                 {isProcessing ? (
                   <>
                     <RefreshCw className="w-4 h-4 animate-spin text-black" />
-                    <span>Processing with Razorpay...</span>
+                    <span>Processing...</span>
                   </>
                 ) : (
                   <>
-                    <span>Pay {formatINR(finalAmount)} to {merchantName}</span>
+                    <span>Pay {formatINR(finalAmount)} Now</span>
                     <ArrowRight className="w-4 h-4" />
                   </>
                 )}
@@ -281,71 +433,21 @@ export default function CheckoutModal({
 
             <div className="mt-4 flex items-center justify-center space-x-2 text-[11px] text-slate-500">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Direct single-merchant settlement verified via Razorpay</span>
+              <span>Razorpay TEST MODE Payment Gateway • Safe & Verified</span>
             </div>
           </div>
         ) : (
-          /* Receipt View */
-          <div className="text-center py-4 space-y-5 animate-in zoom-in-95">
-            <div className="w-14 h-14 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center mx-auto">
-              <CheckCircle2 className="w-8 h-8" />
-            </div>
-
-            <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-400 font-mono">
-                Order Confirmed
-              </span>
-              <h2 className="text-xl font-bold text-white tracking-tight mt-1">
-                Thank you, {customerName}!
-              </h2>
-              <p className="text-xs text-slate-400 mt-1">
-                Your purchase with <strong className="text-white">{merchantName}</strong> has been confirmed.
-              </p>
-            </div>
-
-            {/* Receipt Summary */}
-            <div className="p-4 rounded-2xl bg-[#07090e] border border-white/[0.08] text-left text-xs space-y-2">
-              <div className="flex justify-between pb-2 border-b border-white/[0.06]">
-                <span className="text-slate-400">Order ID</span>
-                <span className="font-mono font-bold text-white">{completedReceipt?.orderId}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-slate-400">Seller</span>
-                <span className="font-medium text-white">{completedReceipt?.merchantName || merchantName}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-slate-400">Product</span>
-                <span className="font-medium text-slate-200 truncate max-w-[200px]">{productName}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-slate-400">Amount Paid</span>
-                <span className="font-mono font-bold text-emerald-400 text-sm">{formatINR(completedReceipt?.finalAmount || finalAmount)}</span>
-              </div>
-              <div className="flex justify-between text-[11px] text-slate-500 pt-1">
-                <span>Payment Gateway</span>
-                <span>Razorpay Verified</span>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <button
-                onClick={() => window.print()}
-                className="flex-1 py-2.5 px-4 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.08] text-slate-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors"
-              >
-                <Printer className="w-3.5 h-3.5" />
-                <span>Print Receipt</span>
-              </button>
-
-              <button
-                onClick={onClose}
-                className="flex-1 py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black text-xs font-bold transition-all shadow-lg shadow-emerald-500/20"
-              >
-                Back to Deals
-              </button>
-            </div>
-          </div>
+          /* Detailed Print-Optimized Payment Receipt / Invoice */
+          <PaymentReceipt
+            order={completedReceipt}
+            dealData={dealData}
+            customerName={customerName}
+            customerEmail={customerEmail}
+            customerPhone={customerPhone}
+            customerAddress={customerAddress}
+            onClose={onClose}
+          />
         )}
-
       </div>
     </div>
   );
