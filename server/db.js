@@ -9,8 +9,8 @@ export async function connectDB() {
 
   // If completely missing or empty placeholder
   if (!uri || uri === '<MY_MONGODB_ATLAS_CONNECTION_STRING>') {
-    console.log('ℹ️  MongoDB: MONGODB_URI not configured. Running in development in-memory/JSON fallback mode.');
-    console.log('ℹ️  MongoDB: To connect MongoDB Atlas, add your connection string to server/.env (Project: DealPilot, Database: dealpilot).');
+    console.log('MongoDB: MONGODB_URI not configured. Running in development in-memory/JSON fallback mode.');
+    console.log(' MongoDB: To connect MongoDB Atlas, add your connection string to server/.env (Project: DealPilot, Database: dealpilot).');
     isConnected = false;
     connectionError = null;
     return { connected: false, mode: 'fallback' };
@@ -31,7 +31,13 @@ export async function connectDB() {
 
   mongoose.connection.on('disconnected', () => {
     isConnected = false;
-    console.log('MongoDB: Disconnected');
+    console.log('MongoDB: Disconnected (reconnection attempt in progress if server is active)...');
+  });
+
+  mongoose.connection.on('reconnected', () => {
+    isConnected = true;
+    connectionError = null;
+    console.log('MongoDB: Reconnected successfully');
   });
 
   try {
@@ -39,6 +45,9 @@ export async function connectDB() {
     await mongoose.connect(uri, {
       dbName: 'dealpilot',
       serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 45000,
+      maxPoolSize: 10,
+      minPoolSize: 2,
     });
     isConnected = true;
     connectionError = null;

@@ -1,4 +1,6 @@
 {
+  "merchantId": "merchant-omni",
+  "merchantName": "OmniTech Solutions",
   "maxDiscountPercent": 5,
   "maxDiscountAmount": 500,
   "minProfitMarginPercent": 8,
@@ -6,12 +8,5 @@
   "allowSubstitutions": true,
   "allowBundlePerks": true,
   "bundlePerksThreshold": 3500,
-  "freebieItem": {
-    "id": "perk-cable-clip",
-    "name": "Braided Cable Management Clip Set",
-    "retailPrice": 199,
-    "costPrice": 35
-  },
-  "lastUpdated": "2026-09-04T11:10:56.364Z",
-  "storeName": "ApexTech Official Store"
+  "lastUpdated": "2026-09-04T16:16:42.487Z"
 }

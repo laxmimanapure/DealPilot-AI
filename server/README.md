@@ -4,7 +4,7 @@ Standalone Node.js / Express API server for **DealPilot AI**, powering MongoDB A
 
 ---
 
-## 🚀 Independent Quickstart
+##  Independent Quickstart
 
 Run this backend API server completely independently from the frontend:
 
@@ -28,7 +28,7 @@ The backend server will start at **`http://localhost:5000`**.
 
 ---
 
-## ⚙️ Environment Configuration (`server/.env`)
+##  Environment Configuration (`server/.env`)
 
 ```env
 # MongoDB Atlas Connection String
@@ -46,7 +46,7 @@ CLIENT_ORIGIN=http://localhost:5173
 
 ---
 
-## 🛠️ Available Scripts
+##  Available Scripts
 
 Inside the `server/` folder:
 
@@ -55,7 +55,7 @@ Inside the `server/` folder:
 
 ---
 
-## 📡 API Endpoints Reference
+##  API Endpoints Reference
 
 | Prefix | Method | Description |
 | :--- | :--- | :--- |
@@ -73,7 +73,7 @@ Inside the `server/` folder:
 
 ---
 
-## 🚢 Independent Deployment
+##  Independent Deployment
 
 This backend can be deployed independently to:
 * **Render**: Web Service, Root directory `server`, build command `npm install`, start command `npm start`.
