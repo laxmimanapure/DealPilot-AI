@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingNavbar from './LandingNavbar';
 import HeroSection from './HeroSection';
+import ControlledNegotiationSection from './ControlledNegotiationSection';
 import DualExperienceSection from './DualExperienceSection';
 import HowItWorksSection from './HowItWorksSection';
 import FinalCTASection from './FinalCTASection';
@@ -28,7 +29,13 @@ export default function LandingPage({
           onExploreMerchant={onNavigateToMerchantLogin}
         />
 
-        {/* 3. One Platform. Two Powerful Experiences. */}
+        {/* 3. Core Concept: AI Shopping + Controlled Negotiation */}
+        <ControlledNegotiationSection
+          onExploreClient={onNavigateToClientLogin}
+          onExploreMerchant={onNavigateToMerchantLogin}
+        />
+
+        {/* 4. One Platform. Two Powerful Experiences. */}
         <DualExperienceSection
           onExploreClient={onNavigateToClientLogin}
           onExploreMerchant={onNavigateToMerchantLogin}

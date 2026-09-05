@@ -2,11 +2,11 @@
   "merchantId": "merchant-omni",
   "merchantName": "OmniTech Solutions",
   "maxDiscountPercent": 5,
-  "maxDiscountAmount": 500,
+  "maxDiscountAmount": 450,
   "minProfitMarginPercent": 8,
   "maxNegotiationRounds": 2,
   "allowSubstitutions": true,
   "allowBundlePerks": true,
   "bundlePerksThreshold": 3500,
-  "lastUpdated": "2026-09-04T16:16:42.487Z"
+  "lastUpdated": "2026-09-05T14:16:46.109Z"
 }
